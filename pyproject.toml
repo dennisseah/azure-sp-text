@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "azure-sp2txt"
+version = "0.1.0"
+description = ""
+authors = ["Dennis Seah <dennis.seah@microsoft.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.7.1"
+pydantic-settings = "^2.2.1"
+moviepy = "^1.0.3"
+azure-cognitiveservices-speech = "^1.37.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.5"
+pyright = "^1.1.364"
+
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "TID"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.pyright]
+typeCheckingMode = "basic"
+venvPath = "."
+venv = ".venv"
+exclude = ["typings", ".venv"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
