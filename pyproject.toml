@@ -17,6 +17,7 @@ azure-cognitiveservices-speech = "^1.37.0"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.4.5"
 pyright = "^1.1.364"
+pre-commit = "^3.7.1"
 
 
 [tool.ruff.lint]
